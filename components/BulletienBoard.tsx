@@ -1,5 +1,6 @@
 import React from "react";
 import {Card, CardBody, Tab, Tabs} from "@nextui-org/react";
+import Link from "next/link";
 
 const BulletienBoard = () => {
     let tabs = [{
@@ -38,7 +39,7 @@ const BulletienBoard = () => {
         content: [" IEEE Open Access Journals", " Springer Open Access Journals", " Elsevier Open Access Journals", " Directory of Open Access "]
     }];
 
-    return (<div className="flex w-full flex-col container justify-center items-center py-16 text-sm">
+    return (<div className="flex w-full flex-col container justify-center items-center py-12 text-sm">
         <Tabs aria-label="Dynamic tabs" disableAnimation={false} items={tabs}
               classNames={{
                   tabList: "gap-0 min-w-full relative rounded-2xl mb-4 border py-2 flex flex-row items-center flex-grow flex-wrap shadow-lg",
@@ -49,11 +50,13 @@ const BulletienBoard = () => {
         >
             {(item) => (<Tab key={item.id} title={item.label} className={`w-full`}>
                 <Card className={``}>
-                    <CardBody className={"bg-neutral-200 rounded-2xl min-w-full p-4"}>
+                    <CardBody className={"bg-neutral-200 rounded-2xl min-w-full py-4 px-8"}>
                         <ul className={` flex flex-col gap-4`}>
-                            {item.content.map((point) => <li className={`text-sm`} key={point}>
-                                {point}
-                            </li>)}
+                            {item.content.map((point) => <Link href={""}>
+                                <li className={`text-sm list-disc hover:underline underline-offset-4`} key={point}>
+                                    {point}
+                                </li>
+                            </Link>)}
                         </ul>
                     </CardBody>
                 </Card>

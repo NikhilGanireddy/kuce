@@ -9,7 +9,7 @@ import it from "../public/it.jpg"
 
 const Departments = () => {
 
-    return <main className={`container flex flex-col justify-center items-center py-16 gap-12`}>
+    return <main className={`container flex flex-col justify-center items-center py-12 gap-12`}>
 
         <h1 className={`text-3xl font-medium text-red-600`}>Departments</h1>
         <div className={`grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-3 lg:gap-6 w-full`}>

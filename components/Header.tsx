@@ -4,6 +4,7 @@ import {useEffect, useState} from "react";
 import Image from "next/image";
 import kuLogo from "../public/kuLogo-removebg-preview.png"
 import Link from "next/link";
+import MobileNavigation from "@/components/MobileNavigation";
 
 const Header = () => {
     const names = ['University College Of Engineering, KU', 'యూనివర్సిటీ కాలేజ్ ఆఫ్ ఇంజనీరింగ్, కెయు']
@@ -38,12 +39,12 @@ console.log(OpenMenu)
     return <main
         className={`relative h-full w-full z-40`}>
         <div
-            className={`w-full fixed flex flex-col top-0 z-10 bg-transparent backdrop-blur-2xl py-4 text-black gap-y-6`}>
+            className={`w-full fixed flex items-center flex-col top-0 z-10 bg-transparent backdrop-blur-2xl py-4 text-black gap-y-6`}>
             <div className={`w-full container flex justify-between items-center `}>
                 <div className={`flex justify-center items-center gap-2`}>
                     <Image src={kuLogo} alt={"KULOGO"} height={100} width={100}
                            className={` w-16 h-16 object-center object-cover`}/>
-                    <h1 className={` text-2xl font-bold`}>{MyComponent()}</h1>
+                    <h1 className={`text-lg font-semibold lg:text-2xl lg:font-bold`}>{MyComponent()}</h1>
                 </div>
 
                 <Link href={`https://maps.app.goo.gl/tCtSTVdgKzoMT5p47`} target={"_blank"}
@@ -54,6 +55,7 @@ console.log(OpenMenu)
                     </div>
                     {locationIcon()}
                 </Link>
+                <MobileNavigation/>
             </div>
             <NavigationBar/>
         </div>

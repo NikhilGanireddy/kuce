@@ -14,9 +14,9 @@ export default function App() {
     return (<main className={``}>
         <Header/>
         <SwiperBar/>
+        <Departments/>
         <Welcome/>
         <Administration/>
-        <Departments/>
         <BulletienBoard/>
         <QuickLinks/>
     </main>);

@@ -24,7 +24,7 @@ const SwiperBar = () => {
     }, []);
     return (<>
         <Swiper
-            spaceBetween={30}
+            spaceBetween={0}
             centeredSlides={true}
             autoplay={{
                 delay: 5000, disableOnInteraction: false,
@@ -34,24 +34,28 @@ const SwiperBar = () => {
             }}
             navigation={false}
             modules={[Autoplay, Pagination, Navigation]}
-            className="mySwiper swiper-pagination-disabled bg-black w-full swiper-ios max-h-screen"
+            className="mySwiper swiper-pagination-disabled bg-black w-full swiper-ios max-h-screen min-h-full"
         >
-            <SwiperSlide><Image priority src={college} alt={"goku"} height={undefined} width={undefined}
-                                className={`object-cover object-center`}/></SwiperSlide>
-            <SwiperSlide><Image priority src={whitebeard} alt={"goku"} height={undefined} width={undefined}
-                                className={`object-cover object-center`}/></SwiperSlide>
-            {/*<SwiperSlide><Image priority src={goku} alt={"goku"} height={undefined} width={undefined}*/}
-            {/*                    className={`object-cover object-center`}/></SwiperSlide>*/}
-            <SwiperSlide><Image priority src={pexels} alt={"cyber"} height={undefined} width={undefined}
-                                className={`object-cover object-center`}/></SwiperSlide>
+            <SwiperSlide>
+                <Image priority src={college} alt={"goku"} height={undefined} width={undefined}
+                       className={`object-fill w-full h-full object-center`}/>
+            </SwiperSlide>
+            <SwiperSlide>
+                <Image priority src={whitebeard} alt={"goku"} height={undefined} width={undefined}
+                       className={`object-cover object-center`}/>
+            </SwiperSlide>
+            <SwiperSlide>
+                <Image priority src={pexels} alt={"cyber"} height={undefined} width={undefined}
+                       className={`object-cover object-center`}/>
+            </SwiperSlide>
         </Swiper>
         <div
-            className={`absolute top-1/2 left-1/2 z-20 -translate-x-1/2 flex flex-col gap-y-4 justify-center items-center`}>
+            className={`hidden  absolute top-1/2 left-1/2 z-20 -translate-x-1/2 lg:flex flex-col gap-y-4 justify-center items-center`}>
             <h1 className={` text-3xl font-bold text-white`}>Welcome to UCE, KU</h1>
             <a href={"#welcome"}>
-            <Button
-                className={`w-max px-4 py-2 bg-white text-black hover:bg-[#CDCED1] hover:text-black transition-all`}>Know
-                more</Button>
+                <Button
+                    className={`w-max px-4 py-2 bg-white text-black hover:bg-[#CDCED1] hover:text-black transition-all`}>Know
+                    more</Button>
             </a>
         </div>
     </>);

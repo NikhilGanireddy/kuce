@@ -1,10 +1,10 @@
 const Welcome = () => {
-    return <main id={"welcome"} className={`container flex justify-center items-center gap-12 flex-col py-16`}>
+    return <main id={"welcome"} className={`container flex justify-center items-center gap-12 flex-col py-12`}>
         <h1 className={`text-3xl font-medium text-red-600`}>Welcome to University College of Engineering,
             Kothagudem</h1>
 
-        <div>
-            <p className={`px-4`}>The Gov­ern­ment of Andhra Pradesh, real­iz­ing the pop­u­lar demand for enhance­ment
+        <div className={`p-4 flex flex-col gap-4 `}>
+            <p className={` text-base`}>The Gov­ern­ment of Andhra Pradesh, real­iz­ing the pop­u­lar demand for enhance­ment
                 of facil­i­ties for
                 engi­neer­ing edu­ca­tion, adopted a far reach­ing and pro­gres­sive pol­icy of encour­ag­ing
                 phil­an­thropic orga­ni­za­tions to estab­lish and man­age tech­ni­cal insti­tu­tions with­out
@@ -19,7 +19,7 @@ const Welcome = () => {
                 alumni of
                 this institute are placed in reputed orga­ni­za­tions all over India and all over the World and gained
                 recog­ni­tion amongst aca­d­e­mic circles..</p>
-            <p className={`px-4`}>
+            <p className={` text-base`}>
                 The University College of Engineering, Kakatiya University (UCE-KU), (erstwhile Kothagudem School of
                 Mines)
                 has acres 390.21 gts of land. UCE offers B.Tech. programmes in 05 disciplines at UG level.i.e.,
