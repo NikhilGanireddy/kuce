@@ -1,4 +1,5 @@
 import Link from "next/link";
+// @ts-ignore
 import {
     UilArrowCircleUp,
     UilCalendarAlt,
