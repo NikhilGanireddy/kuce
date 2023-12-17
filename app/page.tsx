@@ -3,11 +3,11 @@ import React from "react";
 
 import SwiperBar from "@/components/Swiper";
 import Header from "@/components/Header";
-// import ImportantAnnouncements from "@/components/ImportantAnnouncements";
 import BulletienBoard from "@/components/BulletienBoard";
 import Departments from "@/components/Departments";
 import Welcome from "@/components/Welcome";
 import Administration from "@/components/Administration";
+import QuickLinks from "@/components/QuickLinks";
 
 export default function App() {
 
@@ -17,7 +17,7 @@ export default function App() {
         <Welcome/>
         <Administration/>
         <Departments/>
-        {/*<ImportantAnnouncements/>*/}
         <BulletienBoard/>
+        <QuickLinks/>
     </main>);
 }
