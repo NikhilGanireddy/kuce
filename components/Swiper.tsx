@@ -34,23 +34,23 @@ const SwiperBar = () => {
             }}
             navigation={false}
             modules={[Autoplay, Pagination, Navigation]}
-            className="mySwiper swiper-pagination-disabled bg-black w-full swiper-ios max-h-screen min-h-full"
+            className="mySwiper swiper-pagination-disabled bg-black w-full swiper-ios min-h-screen "
         >
-            <SwiperSlide>
-                <Image priority src={college} alt={"goku"} height={undefined} width={undefined}
-                       className={`object-fill w-full h-full object-center`}/>
+            <SwiperSlide className={`min-w-full min-h-full`}>
+                <Image priority src={college} alt={"College"} height={2844} width={3794}
+                       className={`h-screen object-cover object-center`}/>
             </SwiperSlide>
             <SwiperSlide>
                 <Image priority src={whitebeard} alt={"goku"} height={undefined} width={undefined}
-                       className={`object-cover object-center`}/>
+                       className={`h-screen object-cover object-center`}/>
             </SwiperSlide>
             <SwiperSlide>
                 <Image priority src={pexels} alt={"cyber"} height={undefined} width={undefined}
-                       className={`object-cover object-center`}/>
+                       className={`h-screen object-cover object-center`}/>
             </SwiperSlide>
         </Swiper>
         <div
-            className={`hidden  absolute top-1/2 left-1/2 z-20 -translate-x-1/2 lg:flex flex-col gap-y-4 justify-center items-center`}>
+            className={` absolute top-1/2 left-1/2 z-20 -translate-x-1/2 flex flex-col gap-y-4 justify-center items-center w-full`}>
             <h1 className={` text-3xl font-bold text-white`}>Welcome to UCE, KU</h1>
             <a href={"#welcome"}>
                 <Button

@@ -9,13 +9,14 @@ import MobileNavigation from "@/components/MobileNavigation";
 const Header = () => {
     const names = ['University College Of Engineering, KU', 'యూనివర్సిటీ కాలేజ్ ఆఫ్ ఇంజనీరింగ్, కెయు']
     const [OpenMenu, setOpenMenu] = useState(false)
+    console.log(OpenMenu)
     useEffect(() => {
         setOpenMenu(true)
     }, []);
 
     function MyComponent() {
         const [currentName, setCurrentName] = useState(names[0]);
-console.log(OpenMenu)
+
         function setRandomName() {
             const index = Math.floor(Math.random() * names.length);
             let newName = names[index]
@@ -24,7 +25,6 @@ console.log(OpenMenu)
             } else {
                 setCurrentName(newName)
             }
-            return
         }
 
         useEffect(() => {
@@ -44,12 +44,14 @@ console.log(OpenMenu)
                 <div className={`flex justify-center items-center gap-2`}>
                     <Image src={kuLogo} alt={"KULOGO"} height={100} width={100}
                            className={` w-16 h-16 object-center object-cover`}/>
-                    <h1 className={`text-lg font-semibold lg:text-2xl lg:font-bold`}>{MyComponent()}</h1>
+                    <h1 className={`text-lg font-semibold lg:text-2xl lg:font-bold hidden md:flex`}>{MyComponent()}</h1>
+                    <h1 className={`text-lg font-semibold lg:text-2xl lg:font-bold md:hidden flex`}>UCE KU</h1>
+
                 </div>
 
                 <Link href={`https://maps.app.goo.gl/tCtSTVdgKzoMT5p47`} target={"_blank"}
                       className={` justify-center items-center gap-1 hidden md:flex`}>
-                    <div className={` text-xs `}>
+                    <div className={` text-xs`}>
                         <h1>University College of Engineering, KU</h1>
                         <h2>Kothagudem, Telangana - 507118, India</h2>
                     </div>

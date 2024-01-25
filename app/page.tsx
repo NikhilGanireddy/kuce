@@ -1,5 +1,5 @@
 "use client"
-import React from "react";
+import React, {useEffect, useState} from "react";
 
 import SwiperBar from "@/components/Swiper";
 import Header from "@/components/Header";
@@ -10,6 +10,15 @@ import Administration from "@/components/Administration";
 import QuickLinks from "@/components/QuickLinks";
 
 export default function App() {
+    const [isMounted, setIsMounted] = useState(false);
+
+    useEffect(() => {
+        setIsMounted(true);
+    }, []);
+
+    if (!isMounted) {
+        return null;
+    }
 
     return (<main className={``}>
         <Header/>

@@ -23,9 +23,9 @@ const NavigationBar = () => {
 
     return (<div className={` text-black gap-2 backdrop-blur-md w-full`}>
         <div className={`container lg:flex items-center justify-center w-full flex-wrap hidden`}>
-            {Navlinks.map((link) => {
-                return (<>
-                    {link.subLinks.length === 0 ? (<NavigationMenu className={`bg-transparent max-w-fit`}>
+            {Navlinks.map((link,index) => {
+                return (<div key={index}>
+                    {link.subLinks.length === 0 ? (<NavigationMenu key={index} className={`bg-transparent max-w-fit`}>
                         <NavigationMenuList className={`bg-transparent w-full`}>
                             <NavigationMenuItem className={``}>
                                 <NavigationMenuLink
@@ -39,9 +39,9 @@ const NavigationBar = () => {
                             <NavigationMenuItem>
                                 <NavigationMenuTrigger
                                     className={`bg-transparent`}>{link.title}</NavigationMenuTrigger>
-                                <NavigationMenuContent>
-                                    {link.subLinks.map((subLink) => {
-                                        return <ul key={subLink.subId}>
+                                <NavigationMenuContent className={` bg-white/20 border-none`}>
+                                    {link.subLinks.map((subLink,index1) => {
+                                        return <ul key={index1}>
                                             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                                 <ListItem href={`${link.href}${subLink.href}`}
                                                           className={`min-w-full text-white`}>{subLink.title}</ListItem>
@@ -52,7 +52,7 @@ const NavigationBar = () => {
                             </NavigationMenuItem>
                         </NavigationMenuList>
                     </NavigationMenu>)}
-                </>)
+                </div>)
             })}
         </div>
     </div>)
@@ -66,15 +66,15 @@ const ListItem = React.forwardRef<React.ElementRef<"a">, React.ComponentPropsWit
                                                                                                    children,
                                                                                                    ...props
                                                                                                }, ref) => {
-    return (<li>
+    return (<li className={`bg-transparent`}>
         <NavigationMenuLink asChild>
             <a
                 ref={ref}
-                className={"block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"}
+                className={"block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors bg-transparent hover:bg-transparent backdrop-blur-xl hover:text-black focus:bg-white/20 focus:text-black"}
                 {...props}
             >
                 <div className="text-sm font-medium leading-none">{title}</div>
-                <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                <p className="line-clamp-2 text-sm leading-snug text-black">
                     {children}
                 </p>
             </a>
