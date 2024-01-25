@@ -14,8 +14,13 @@ import whitebeard from "../public/whitebeard.png"
 import pexels from "../public/pexels.jpg"
 
 import {Button} from "@/components/ui/button";
+import {usePathname} from "next/navigation";
 
 const SwiperBar = () => {
+    const pathName = usePathname()
+    // console.log(pathName)
+    const paths = pathName.split("/")
+    // console.log(paths)
 
     const [OpenMenu, setOpenMenu] = useState(false)
     console.log(OpenMenu)
@@ -50,13 +55,17 @@ const SwiperBar = () => {
             </SwiperSlide>
         </Swiper>
         <div
-            className={` absolute top-1/2 left-1/2 z-20 -translate-x-1/2 flex flex-col gap-y-4 justify-center items-center w-full`}>
+            className={`${pathName.length > 1 ? "hidden" : "block"} absolute top-1/2 left-1/2 z-20 -translate-x-1/2 flex flex-col gap-y-4 justify-center items-center w-full`}>
             <h1 className={` text-3xl font-bold text-white`}>Welcome to UCE, KU</h1>
             <a href={"#welcome"}>
                 <Button
                     className={`w-max px-4 py-2 bg-white text-black hover:bg-[#CDCED1] hover:text-black transition-all`}>Know
                     more</Button>
             </a>
+        </div>
+        <div
+            className={`${pathName.length > 1 ? "block" : "hidden"} absolute top-1/2 left-1/2 z-20 -translate-x-1/2 flex flex-col gap-y-4 justify-center items-center w-full`}>
+            <h1 className={` text-3xl font-bold text-white capitalize`}>{paths[paths.length - 1]}</h1>
         </div>
     </>);
 }

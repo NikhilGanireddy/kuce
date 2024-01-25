@@ -3,6 +3,8 @@ import Providers from "@/app/providers";
 import {Inter} from "next/font/google";
 import Header from "@/components/Header";
 import QuickLinks from "@/components/QuickLinks";
+import SwiperBar from "@/components/Swiper";
+import React from "react";
 
 const inter = Inter({subsets: ['latin']})
 
@@ -21,7 +23,8 @@ export default function RootLayout({
     <Providers>
         <div className={`flex flex-col min-h-screen`}>
             <Header/>
-            <div className={` flex-1 h-full mt-32 lg:mt-44 container`}>
+            <SwiperBar/>
+            <div className={` flex-1 h-full container`}>
                 {children}
             </div>
             <QuickLinks/>
