@@ -26,11 +26,11 @@ const Navlinks: {
     id: 4, title: "Academics", href: "/academics", subLinks: [{
         subId: 1, title: "Courses", href: "/courses",
     }, {
-        subId: 2, title: "Academic AcademicCalenderIcon", href: "/academic-calender",
+        subId: 2, title: "Academic Calender", href: "/academic-calender",
     }, {
         subId: 3, title: "Academic Regulations", href: "/academic-regulations",
     }, {
-        subId: 4, title: "Syllabus", href: "/Syllabus",
+        subId: 4, title: "Syllabus", href: "/syllabus",
     }, {
         subId: 5, title: "Fee Structure & Scholarships", href: "/fee-structure-and-scholarships",
     },],

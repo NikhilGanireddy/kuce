@@ -14,13 +14,13 @@ const Page = () => {
                 All stu­dents admit­ted to the Uni­ver­sity col­leges of Engineer­ing and their par­ents are hereby
                 informed to go through the guide­lines on anti ragging:
             </p>
-            <p>
+            <p className={`overflow-hidden`}>
                 It is manda­tory to fill in an Anti Rag­ing Under­tak­ing online, please visit
-                <Link href={`https://www.antiragging.in`} target={"_blank"}
-                      className={`mx-2 text-red-600`}>www.antiragging.in</Link>
+                <a href={`https://www.antiragging.in`} target={"_blank"}
+                      className={`mx-2 text-red-600`}>www.antiragging.in</a>
                 or
-                <Link href={`https://www.amanmovement.org`} target={"_blank"}
-                      className={`mx-2 text-red-600`}>www.amanmovement.org</Link>
+                <a href={`https://www.amanmovement.org`} target={"_blank"}
+                      className={`mx-2 text-red-600`}>www.amanmovement.org</a>
 
             </p>
         </div>

@@ -14,7 +14,7 @@ const Page = () => {
         return null;
     }
 
-    return <div className={`flex flex-col justify-center items-center gap-12 py-12 lg:py-20`}>
+    return <div className={`flex flex-col justify-center items-center gap-12 py-16 lg:py-24`}>
         <Image priority src={`http://www.kuce.ac.in/images/aboutuce.jpg`} alt={"Kuce Main Block"} width={800} height={600}
                className={`lg:h-auto lg:w-1/2 w-full h-full object-cover object-center rounded-xl `}/>
         <div className={`w-full h-full flex flex-col gap-4`}>
