@@ -35,7 +35,7 @@ const Navlinks: {
         subId: 5, title: "Fee Structure & Scholarships", href: "/fee-structure-and-scholarships",
     },],
 }, {
-    id: 5, title: "Departments", href: "/academics", subLinks: [{
+    id: 5, title: "Departments", href: "/departments", subLinks: [{
         subId: 1, title: "Mining Engineering", href: "/dept-of-mining",
     }, {
         subId: 2, title: "Computer Science & Engineering", href: "/dept-of-cse",
@@ -50,7 +50,7 @@ const Navlinks: {
     id: 6, title: "Facilities", href: "/facilities", subLinks: [{
         subId: 1, title: "Library", href: "/library",
     }, {
-        subId: 2, title: "ECAP", href: "/ecap",
+        subId: 2, title: "ECAP", href: "http://117.238.240.2/ecap/default.aspx",
     }, {
         subId: 3, title: "Hostels", href: "/hostels",
     },],
