@@ -8,11 +8,7 @@ import 'swiper/css/navigation';
 
 import {Autoplay, Navigation, Pagination} from 'swiper/modules';
 import Image from "next/image";
-import college from "../public/college.jpg"
-import whitebeard from "../public/whitebeard.png"
 // import goku from "../public/gokuu.png"
-import pexels from "../public/pexels.jpg"
-
 import {Button} from "@/components/ui/button";
 import {usePathname} from "next/navigation";
 
@@ -42,15 +38,36 @@ const SwiperBar = () => {
             className="mySwiper swiper-pagination-disabled bg-black w-full swiper-ios min-h-screen "
         >
             <SwiperSlide className={`min-w-full min-h-full`}>
-                <Image priority src={college} alt={"College"} height={2844} width={3794}
+                <Image priority
+                       src={`http://kuce.ac.in/modules/mod_amazingslider_1/tmpl/images/Old%20Boys%20Hostel.JPG`}
+                       alt={"College"} height={2844} width={3794}
+                       className={`h-screen object-cover object-center`}/>
+            </SwiperSlide>
+            <SwiperSlide className={`min-w-full min-h-full`}>
+                <Image priority src={"http://kuce.ac.in/modules/mod_amazingslider_1/tmpl/images/ECE.jpg"}
+                       alt={"College"} height={2844} width={3794}
+                       className={`h-screen object-cover object-center`}/>
+            </SwiperSlide>
+            <SwiperSlide className={`min-w-full min-h-full`}>
+                <Image priority src={"http://kuce.ac.in/modules/mod_amazingslider_1/tmpl/images/cng.jpg"}
+                       alt={"College"} height={2844} width={3794}
+                       className={`h-screen object-cover object-center`}/>
+            </SwiperSlide>
+
+            <SwiperSlide className={`min-w-full min-h-full`}>
+                <Image priority src={"http://kuce.ac.in/modules/mod_amazingslider_1/tmpl/images/EEE.jpg"}
+                       alt={"College"} height={2844} width={3794}
                        className={`h-screen object-cover object-center`}/>
             </SwiperSlide>
             <SwiperSlide>
-                <Image priority src={whitebeard} alt={"goku"} height={undefined} width={undefined}
+                <Image priority
+                       src={"http://kuce.ac.in/modules/mod_amazingslider_1/tmpl/images/VLSI%20DESIGN%20HACKTHON.jpg"}
+                       alt={"goku"} height={2844} width={3794}
                        className={`h-screen object-cover object-center`}/>
             </SwiperSlide>
             <SwiperSlide>
-                <Image priority src={pexels} alt={"cyber"} height={undefined} width={undefined}
+                <Image priority src={"http://kuce.ac.in/modules/mod_amazingslider_1/tmpl/images/Alumni.jpg"}
+                       alt={"cyber"} height={2844} width={3794}
                        className={`h-screen object-cover object-center`}/>
             </SwiperSlide>
         </Swiper>
