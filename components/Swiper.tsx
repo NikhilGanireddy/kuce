@@ -40,34 +40,34 @@ const SwiperBar = () => {
             <SwiperSlide className={`min-w-full min-h-full`}>
                 <Image priority={true}
                        src={`http://kuce.ac.in/modules/mod_amazingslider_1/tmpl/images/Old%20Boys%20Hostel.JPG`}
-                       alt={"College"} height={2844} width={3794}
+                       alt={"College"} height={undefined} width={undefined}
                        className={`h-screen object-cover object-center`}/>
             </SwiperSlide>
             <SwiperSlide className={`min-w-full min-h-full`}>
                 <Image priority={true} src={"http://kuce.ac.in/modules/mod_amazingslider_1/tmpl/images/ECE.jpg"}
-                       alt={"College"} height={2844} width={3794}
+                       alt={"College"} height={undefined} width={undefined}
                        className={`h-screen object-cover object-center`}/>
             </SwiperSlide>
             <SwiperSlide className={`min-w-full min-h-full`}>
                 <Image priority={true} src={"http://kuce.ac.in/modules/mod_amazingslider_1/tmpl/images/cng.jpg"}
-                       alt={"College"} height={2844} width={3794}
+                       alt={"College"} height={undefined} width={undefined}
                        className={`h-screen object-cover object-center`}/>
             </SwiperSlide>
 
             <SwiperSlide className={`min-w-full min-h-full`}>
                 <Image priority={true} src={"http://kuce.ac.in/modules/mod_amazingslider_1/tmpl/images/EEE.jpg"}
-                       alt={"College"} height={2844} width={3794}
+                       alt={"College"} height={undefined} width={undefined}
                        className={`h-screen object-cover object-center`}/>
             </SwiperSlide>
             <SwiperSlide>
                 <Image priority={true}
                        src={"http://kuce.ac.in/modules/mod_amazingslider_1/tmpl/images/VLSI%20DESIGN%20HACKTHON.jpg"}
-                       alt={"goku"} height={2844} width={3794}
+                       alt={"goku"} height={undefined} width={undefined}
                        className={`h-screen object-cover object-center`}/>
             </SwiperSlide>
             <SwiperSlide>
                 <Image priority={true} src={"http://kuce.ac.in/modules/mod_amazingslider_1/tmpl/images/Alumni.jpg"}
-                       alt={"cyber"} height={2844} width={3794}
+                       alt={"cyber"} height={undefined} width={undefined}
                        className={`h-screen object-cover object-center`}/>
             </SwiperSlide>
         </Swiper>
