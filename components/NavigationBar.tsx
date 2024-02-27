@@ -15,7 +15,7 @@ import Link from "next/link";
 
 const NavigationBar = () => {
     const [OpenMenu, setOpenMenu] = useState(false)
-    console.log(OpenMenu)
+    // console.log(OpenMenu)
 
     useEffect(() => {
         setOpenMenu(true)
@@ -30,7 +30,7 @@ const NavigationBar = () => {
                             <NavigationMenuItem className={``}>
                                 <NavigationMenuLink
                                     className={`w-full bg-transparent ${navigationMenuTriggerStyle()}`}>
-                                    <Link href={`${link.href}`} legacyBehavior passHref>{link.title}</Link>
+                                    <Link href={` ${link.href}`} legacyBehavior passHref>{link.title}</Link>
                                 </NavigationMenuLink>
                             </NavigationMenuItem>
                         </NavigationMenuList>

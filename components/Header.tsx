@@ -9,7 +9,7 @@ import MobileNavigation from "@/components/MobileNavigation";
 const Header = () => {
     const names = ['University College Of Engineering, KU', 'యూనివర్సిటీ కాలేజ్ ఆఫ్ ఇంజనీరింగ్, కెయు']
     const [OpenMenu, setOpenMenu] = useState(false)
-    console.log(OpenMenu)
+    // console.log(OpenMenu)
     useEffect(() => {
         setOpenMenu(true)
     }, []);

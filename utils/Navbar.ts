@@ -34,24 +34,32 @@ const Navlinks: {
     }, {
         subId: 5, title: "Fee Structure & Scholarships", href: "/fee-structure-and-scholarships",
     },],
-}, {
-    id: 5, title: "Departments", href: "/departments", subLinks: [{
-        subId: 1, title: "Mining Engineering", href: "/dept-of-mining",
-    }, {
-        subId: 2, title: "Computer Science & Engineering", href: "/dept-of-cse",
-    }, {
-        subId: 3, title: "Electrical & Electrical Engineering", href: "/dept-of-eee",
-    }, {
-        subId: 4, title: "Electronics & Communications Engineering", href: "/dept-of-ece",
-    }, {
-        subId: 5, title: "Information Technology", href: "/dept-of-it",
-    },],
-}, {
+},
+
+// {
+//     id: 5, title: "Departments", href: "/departments", subLinks: [{
+//         subId: 1, title: "Mining Engineering", href: "/dept-of-mining",
+//     }, {
+//         subId: 2, title: "Computer Science & Engineering", href: "/dept-of-cse",
+//     }, {
+//         subId: 3, title: "Electrical & Electrical Engineering", href: "/dept-of-eee",
+//     }, {
+//         subId: 4, title: "Electronics & Communications Engineering", href: "/dept-of-ece",
+//     }, {
+//         subId: 5, title: "Information Technology", href: "/dept-of-it",
+//     },],
+// }, 
+
+{
     id: 6, title: "Facilities", href: "/facilities", subLinks: [{
         subId: 1, title: "Library", href: "/library",
-    }, {
-        subId: 2, title: "ECAP", href: "http://117.238.240.2/ecap/default.aspx",
-    }, {
+    }, 
+    
+    // {
+    //     subId: 2, title: "ECAP", href: "http://117.238.240.2/ecap/default.aspx",
+    // },
+    
+     {
         subId: 3, title: "Hostels", href: "/hostels",
     },],
 }, {
